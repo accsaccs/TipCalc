@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="x3yPfP9"><a href="//imgur.com/x3yPfP9">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![](https://github.com/accsaccs/TipCalc/blob/master/TipCalc_basic.gif?raw=true)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
