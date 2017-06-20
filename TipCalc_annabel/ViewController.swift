@@ -14,10 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var twoPplLabel: UILabel!
+    @IBOutlet weak var threePplLabel: UILabel!
+    @IBOutlet weak var fourPplLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        billField.becomeFirstResponder()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,8 +43,16 @@ class ViewController: UIViewController {
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         
+        let twoppl = total/2.0
+        let threeppl = total/3.0
+        let fourppl = total/4.0
+        
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
+        twoPplLabel.text = String(format: "$%.2f", twoppl)
+        threePplLabel.text = String(format: "$%.2f", threeppl)
+        fourPplLabel.text = String(format: "$%.2f", fourppl)
     }
     
 }
